@@ -6,6 +6,32 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    display: flex;
+}
+
+section {
+    border-style: solid;
+    border-color: lightgray;
+    width: 350px;
+}
+
+img, iframe {
+    width: 100%;
+}
+
+section {
+    margin: 8px;
+}
+
+h2, p, button {
+    margin: 15px;
+}
+
+h2 {
+    font-family: 'Island Moments', cursive;
+}
+
 /*
 Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
@@ -14,11 +40,15 @@ Feel free to borrow from Exercise 1.
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+    main {
+        flex-wrap: wrap;
+    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
 
-    
+    main {
+        flex-direction: column;
+    }
 }
