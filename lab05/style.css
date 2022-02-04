@@ -138,8 +138,13 @@ button {
   .dyslexia-mode {
       text-align: center;
     border: none; border-bottom: thin grey solid;  /* just keeping the bottom border for this element, to retain some separation */
-    max-width: 50%; /* standard width */
+
     transform: none; /* do not rotate */
     background-color: inherit; /* We no longer look like a label, so we don't require our own background */
     margin-bottom: 1em; padding-left:0; /* some spacing adjustments */
   }
+
+  .dyslexia-mode .content {
+    max-width: 800px;
+    align-self: center;
+   }
