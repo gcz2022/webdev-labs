@@ -5,3 +5,26 @@
     2. Modify the className property of the body tag 
        based on the button that was clicked.
 */
+const makeDesert = () => {
+   document.querySelector("body").className = "desert";
+};
+
+const makeOcean = () => {
+   document.querySelector("body").className = "ocean";
+};
+
+const makeHighContrast = () => {
+   document.querySelector("body").className = "high-contrast";
+};
+
+const makeDefault = () => {
+   document.querySelector("body").className = "";
+};
+
+document.querySelector("#desert").addEventListener('click', makeDesert);
+document.querySelector("#ocean").addEventListener('click', makeOcean);
+document.querySelector("#high-contrast").addEventListener('click', makeHighContrast);
+
+document.querySelector("#default").addEventListener('click', makeDefault);
+
+
